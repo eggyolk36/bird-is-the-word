@@ -5,6 +5,13 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("A")
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
 })
+input.onGesture(Gesture.ScreenDown, function () {
+    basic.clearScreen()
+    player1smelly += 10
+    OLED.writeStringNewLine("shhhhhh")
+    basic.pause(500)
+    whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
+})
 input.onButtonPressed(Button.AB, function () {
     eagleschiefs += 1
     howdoyoulosetothecincinnatibengals += 1
@@ -37,7 +44,7 @@ function whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithpe
     OLED.newLine()
     OLED.writeStringNewLine("Draws: " + howdoyoulosetothecincinnatibengals)
     OLED.newLine()
-    OLED.writeStringNewLine("Rounds:  " + eagleschiefs)
+    OLED.writeStringNewLine("Rounds: " + eagleschiefs)
 }
 let player2smelly = 0
 let player1smelly = 0
@@ -49,4 +56,5 @@ eagleschiefs = 0
 howdoyoulosetothecincinnatibengals = 0
 player1smelly = 0
 player2smelly = 0
+basic.pause(1000)
 whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
