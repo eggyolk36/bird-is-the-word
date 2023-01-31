@@ -5,6 +5,14 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("A")
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
 })
+input.onGesture(Gesture.ScreenDown, function () {
+    basic.clearScreen()
+    OLED.clear()
+    player1smelly += 100000000000000
+    OLED.writeStringNewLine("shhhhhh")
+    basic.pause(2000)
+    whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
+})
 input.onButtonPressed(Button.AB, function () {
     eagleschiefs += 1
     howdoyoulosetothecincinnatibengals += 1
