@@ -41,7 +41,7 @@ input.onGesture(Gesture.Shake, function () {
 input.onGesture(Gesture.LogoDown, function () {
     basic.clearScreen()
     OLED.clear()
-    player1smelly += 100
+    player2smelly += -1
     OLED.writeStringNewLine("shhhhhh")
     basic.pause(2000)
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
