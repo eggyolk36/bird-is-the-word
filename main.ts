@@ -8,7 +8,7 @@ input.onButtonPressed(Button.A, function () {
 input.onGesture(Gesture.ScreenDown, function () {
     basic.clearScreen()
     OLED.clear()
-    player1smelly += 100000000000000
+    player1smelly += 1e+54
     OLED.writeStringNewLine("shhhhhh")
     basic.pause(2000)
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
