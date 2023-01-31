@@ -1,3 +1,13 @@
+function whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway () {
+    OLED.clear()
+    OLED.writeStringNewLine("Player A: " + player1smelly)
+    OLED.newLine()
+    OLED.writeStringNewLine("Player B: " + player2smelly)
+    OLED.newLine()
+    OLED.writeStringNewLine("Draws: " + howdoyoulosetothecincinnatibengals)
+    OLED.newLine()
+    OLED.writeStringNewLine("Rounds: " + eagleschiefs)
+}
 input.onButtonPressed(Button.A, function () {
     eagleschiefs += 1
     player1smelly += 1
@@ -34,6 +44,24 @@ input.onGesture(Gesture.Shake, function () {
     player1smelly = 0
     player2smelly = 0
     eagleschiefs = 0
+    if (player1smelly > player2smelly) {
+        OLED.writeStringNewLine("PLAYER A WINS!")
+        music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.OnceInBackground)
+        basic.pause(100)
+        music.startMelody(music.builtInMelody(Melodies.Entertainer), MelodyOptions.Once)
+    }
+    if (player1smelly < player2smelly) {
+        OLED.writeStringNewLine("PLAYER B WINS!")
+        music.startMelody(music.builtInMelody(Melodies.Nyan), MelodyOptions.OnceInBackground)
+        basic.pause(100)
+        music.startMelody(music.builtInMelody(Melodies.Entertainer), MelodyOptions.Once)
+    }
+    if (player1smelly == player2smelly) {
+        OLED.writeStringNewLine("tied?")
+        music.startMelody(music.builtInMelody(Melodies.Wawawawaa), MelodyOptions.OnceInBackground)
+        basic.pause(100)
+    }
+    basic.pause(5000)
     OLED.writeStringNewLine("playing again")
     basic.pause(2000)
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
@@ -46,16 +74,6 @@ input.onGesture(Gesture.LogoDown, function () {
     basic.pause(2000)
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
 })
-function whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway () {
-    OLED.clear()
-    OLED.writeStringNewLine("Player A: " + player1smelly)
-    OLED.newLine()
-    OLED.writeStringNewLine("Player B: " + player2smelly)
-    OLED.newLine()
-    OLED.writeStringNewLine("Draws: " + howdoyoulosetothecincinnatibengals)
-    OLED.newLine()
-    OLED.writeStringNewLine("Rounds: " + eagleschiefs)
-}
 let player2smelly = 0
 let player1smelly = 0
 let howdoyoulosetothecincinnatibengals = 0
