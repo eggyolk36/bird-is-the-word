@@ -5,13 +5,6 @@ input.onButtonPressed(Button.A, function () {
     basic.showString("A")
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
 })
-input.onGesture(Gesture.ScreenDown, function () {
-    basic.clearScreen()
-    player1smelly += 10
-    OLED.writeStringNewLine("shhhhhh")
-    basic.pause(500)
-    whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
-})
 input.onButtonPressed(Button.AB, function () {
     eagleschiefs += 1
     howdoyoulosetothecincinnatibengals += 1
@@ -28,19 +21,28 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.Shake, function () {
     basic.clearScreen()
+    OLED.clear()
     howdoyoulosetothecincinnatibengals = 0
     player1smelly = 0
     player2smelly = 0
     eagleschiefs = 0
-    OLED.writeStringNewLine("you played the game now time to reset dingleberry")
+    OLED.writeStringNewLine("playing again")
+    basic.pause(2000)
+    whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
+})
+input.onGesture(Gesture.LogoDown, function () {
+    basic.clearScreen()
+    OLED.clear()
+    player1smelly += 100
+    OLED.writeStringNewLine("shhhhhh")
     basic.pause(2000)
     whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway()
 })
 function whopperwhopperwhopperwhopperjuniordoubletriplewhopperframegrilledwithperfecttopperscrownofmydayatBKKKKkhaveityourway () {
     OLED.clear()
-    OLED.writeStringNewLine("PlayerA: " + player1smelly)
+    OLED.writeStringNewLine("Player A: " + player1smelly)
     OLED.newLine()
-    OLED.writeStringNewLine("PlayerB: " + player2smelly)
+    OLED.writeStringNewLine("Player B: " + player2smelly)
     OLED.newLine()
     OLED.writeStringNewLine("Draws: " + howdoyoulosetothecincinnatibengals)
     OLED.newLine()
